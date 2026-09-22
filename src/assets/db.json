@@ -1,0 +1,19 @@
+{
+  "members": [
+    {
+      "id": "1",
+      "name": "dhia",
+      "cin": "123456789",
+      "Type": "Regular",
+      "createdDate": "2024-01-01"
+    },
+    {
+      "id": "2",
+      "name": "dhia2",
+      "cin": "987654321",
+      "Type": "Premium",
+      "createdDate": "2024-02-15"
+    }
+
+  ]
+}
