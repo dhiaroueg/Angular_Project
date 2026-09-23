@@ -1,7 +1,7 @@
-export  interface Member {
-  id: String;
-  name: String;
-  cin: String;
-  Type: String;
-  createdDate: String
+export interface Member {
+  id: string;
+  name: string;
+  cin: string;
+  Type: string;
+  createdDate: string;
 }

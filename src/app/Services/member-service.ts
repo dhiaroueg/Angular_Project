@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Member } from '../../Model/Member';
 
 @Injectable({
   providedIn: 'root',
@@ -11,9 +13,9 @@ export class MemberService {
   constructor(private http: HttpClient) {}
   //fonctions qui envoient des requetes http vers le backend
   // (get, post, put, delete, patch)
-  GetAllMembers() {
+  GetAllMembers(): Observable<Member[]> {
     // code pour envoyer une requete http get vers le backend
-    return this.http.get<any[]>('http://localhost:3000/members');
+    return this.http.get<Member[]>('http://localhost:3000/members');
   }
 }
 
