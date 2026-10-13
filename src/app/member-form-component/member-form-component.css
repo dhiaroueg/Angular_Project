@@ -1,0 +1,11 @@
+form {
+	display: grid;
+	gap: 16px;
+	max-width: 520px;
+	margin: 32px auto;
+	padding: 24px;
+}
+
+button {
+	justify-self: start;
+}

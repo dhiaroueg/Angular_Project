@@ -1,0 +1,32 @@
+<form [formGroup]="form" (ngSubmit)="sub()">
+  <mat-form-field appearance="outline">
+    <mat-label>ID</mat-label>
+    <input matInput formControlName="id" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>CIN</mat-label>
+    <input matInput formControlName="cin" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Type</mat-label>
+    <input matInput formControlName="Type" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Created date</mat-label>
+    <input matInput type="date" formControlName="createdDate" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="isSubmitting">
+    {{ isSubmitting ? 'Saving...' : 'Submit' }}
+  </button>
+</form>
+
+

@@ -1,0 +1,120 @@
+
+/* Conteneur principal */
+:host {
+  display: block;
+  height: 100%;
+  min-height: 100vh;
+  font-family: Roboto, Arial, sans-serif;
+  color: #1e293b;
+}
+
+/* Conteneur de navigation */
+mat-sidenav-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* Menu latéral */
+mat-sidenav {
+  width: 230px;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+}
+
+/* Barre de titre du menu latéral */
+mat-sidenav mat-toolbar {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 12px;
+}
+
+/* Liens de navigation */
+mat-nav-list a[mat-list-item] {
+  margin: 6px 10px;
+  width: auto;
+  border-radius: 8px;
+  color: #475569;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Survol des liens */
+mat-nav-list a[mat-list-item]:hover {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+
+/* Icônes de navigation */
+mat-nav-list mat-icon {
+  margin-right: 12px;
+  color: #64748b;
+}
+
+/* Barre supérieure */
+mat-sidenav-content > mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  min-height: 64px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+/* Boutons de la barre supérieure */
+.toolbar-button {
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.toolbar-button:hover {
+  background-color: #f1f5f9;
+}
+
+/* Bouton du menu utilisateur */
+button[mat-menu-trigger-for],
+button[matMenuTriggerFor] {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+/* Avatar utilisateur */
+.avatar {
+  object-fit: cover;
+  border: 2px solid #e2e8f0;
+}
+
+/* Séparateur */
+.toolbar-separator {
+  width: 1px;
+  height: 28px;
+  margin: 0 16px;
+  background-color: #e2e8f0;
+}
+
+/* Zone de contenu */
+.content {
+  padding: 24px;
+  margin-top: 0;
+  color: #334155;
+}
+
+/* Adaptation aux tablettes et téléphones */
+@media (max-width: 768px) {
+  mat-sidenav-content > mat-toolbar {
+    min-height: 56px;
+    padding: 0 12px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .toolbar-separator {
+    margin: 0 8px;
+  }
+}

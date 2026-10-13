@@ -4,16 +4,23 @@
       "id": "1",
       "name": "dhia",
       "cin": "123456789",
-      "Type": "Regular",
+      "Type": "Teacher",
       "createdDate": "2024-01-01"
     },
     {
-      "id": "2",
-      "name": "dhia2",
-      "cin": "987654321",
-      "Type": "Premium",
-      "createdDate": "2024-02-15"
+      "id": "WJSGnWGQhg8",
+      "name": "Dhia RG",
+      "cin": "11188888",
+      "Type": "Teacher",
+      "createdDate": "2025-02-25"
+    },
+    {
+      "id": "YMbAa_v6rng",
+      "name": "rd",
+      "cin": "111",
+      "Type": "Student",
+      "createdDate": null
     }
-
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
